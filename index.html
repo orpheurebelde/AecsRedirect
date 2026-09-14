@@ -81,7 +81,7 @@
   var saida = document.getElementById('segundos');
   if (!meta || !alvo || !saida) { return; }
   var m = /^\s*(\d+)/.exec(meta.getAttribute('content') || '');
-  var restam = m ? parseInt(m[1], 10) : 10;
+  var restam = m ? parseInt(m[1], 30) : 30;
   saida.textContent = restam;
   var t = setInterval(function () {
     restam -= 1;
