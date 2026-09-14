@@ -64,7 +64,7 @@
 <h1>Esta plataforma mudou de endereço</h1>
 <p class="lead">As candidaturas passaram a estar disponíveis no novo portal de recrutamento da Câmara Municipal de Vila Nova de Gaia.</p>
 <p><span class="addr">recrutamento.cm-gaia.pt</span></p>
-<p class="count">Será encaminhado automaticamente dentro de <strong id="segundos">30</strong> segundos.</p>
+<p class="count">Será encaminhado automaticamente dentro de <strong id="segundos">10</strong> segundos.</p>
 
 <!-- =========================================================
      DESTINO  (2 de 2)  -  o mesmo endereco do meta refresh.
@@ -81,7 +81,7 @@
   var saida = document.getElementById('segundos');
   if (!meta || !alvo || !saida) { return; }
   var m = /^\s*(\d+)/.exec(meta.getAttribute('content') || '');
-  var restam = m ? parseInt(m[1], 30) : 30;
+  var restam = m ? parseInt(m[1], 10) : 30;
   saida.textContent = restam;
   var t = setInterval(function () {
     restam -= 1;
